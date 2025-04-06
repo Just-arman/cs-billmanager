@@ -1,0 +1,10 @@
+asyncpg==0.30.0
+sqlalchemy==2.0.19
+alembic==1.11.2
+fastapi
+uvicorn
+psycopg2
+asgiref
+aiohttp
+pytest
+pytest-aiohttp
