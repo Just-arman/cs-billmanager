@@ -4,4 +4,4 @@
 billmgr_url = "https://billing.spacecore.pro"
 auth_info = "tarasov@cloudsell.ru:fD2bG7kH8jbV6nW"
 
-url = "https://billing.spacecore.pro/billmgr?authinfo=tarasov@cloudsell.ru:fD2bG7kH8jbV6nW&func=v2.vds.edit&out=json"
+url = "https://billing.spacecore.pro/billmgr?authinfo=tarasov@cloudsell.ru:fD2bG7kH8jbV6nW&func=vds&out=json"
