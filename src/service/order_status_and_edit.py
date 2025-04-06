@@ -70,8 +70,7 @@ async def prolong_order(
     expiredate: str, 
     real_expiredate: str, 
     iexpiretime: str, 
-    transition: str, 
-    skipbasket: bool=True
+    transition: str
 ):
     order_data = await get_order_data()
     if order_data is None:
@@ -99,14 +98,14 @@ async def prolong_order(
                 "expiredate": expiredate,
                 "real_expiredate": real_expiredate,
                 "i_expiretime": iexpiretime,
-                "period": period_map[period],
+                "period": period,
                 "transition": transition,
                 "autoprolong": "on",
+                "skipbasket": "on",
                 "sok": "ok",
                 "out": "json"
             }
-            if skipbasket:
-                params["skipbasket"] = "on"
+
             query_string = urlencode(params)
             url = f"{BILLMGR_URL}/billmgr?{query_string}"
 
